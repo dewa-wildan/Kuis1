@@ -81,7 +81,7 @@ class _MyAppState extends State<MyApp> {
                 children: <Widget>[
                   Text(
                     "Dari ",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 18),
                   ),
                   DropdownButton<String>(
                     items: listItem.map((String value) {
@@ -99,7 +99,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                   Text("Ke ",
                       style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                          TextStyle(fontSize: 15)),
                   DropdownButton<String>(
                     items: listItem.map((String value) {
                       return DropdownMenuItem<String>(
