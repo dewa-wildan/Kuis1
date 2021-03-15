@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'input.dart';
 import 'dropdown.dart';
 import 'convert.dart';
-import 'convert2.dart';
 import 'result.dart';
 import 'history.dart';
 
@@ -32,21 +31,21 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _inputUser = double.parse(InputController.text);
       if (_newValue == "Kilogram") {
-        if (_newValueA == "ons")
+        if (_newValueA == "Ons")
           _result = _inputUser * 10;
         else if (_newValueA == "Gram")
           _result = _inputUser * 1000;
       
-      } else if (_newValue == "ons") {
+      } else if (_newValue == "Ons") {
         if (_newValueA == "Kilogram")
           _result = _inputUser / 10;
         else if (_newValueA == "Gram")
           _result = _inputUser * 10;
     
       } else if (_newValue == "Gram") {
-        if (_newValueA == "Kg")
+        if (_newValueA == "Kilogram")
           _result = _inputUser / 1000;
-        else if (_newValueA == "Hg")
+        else if (_newValueA == "Ons")
           _result = _inputUser / 10;
       }
        
